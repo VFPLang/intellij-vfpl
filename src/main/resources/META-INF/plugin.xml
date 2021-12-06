@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.vfpl.VFPL-Language-Plugin</id>
+    <name>VFPL</name>
+    <vendor email="nilstrieb@gmail.com" url="https://github.com/VFPLang">VFPL Developers</vendor>
+    <description>Language support for the verbose, polite and formal programming language</description>
+
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="VFPL" extensions="vfpl" language="VFPL" fieldName="INSTANCE"
+                  implementationClass="com.vfpl.VFPLFileType"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
