@@ -76,7 +76,7 @@ multiply::= "multiply" call-expr "with" factor
 divide::= "divide" call-expr "by" factor
 modulo::= "take" call-expr "modulo" factor
 
-call-expr::= call | literal
+call-expr::= call | primary-expr
 
 primary-expr::= "(" expr ")" | literal
 
